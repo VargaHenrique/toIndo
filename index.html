@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tô indo ali</title>
+    <link rel="stylesheet" href="/Style/stylesheet.css" />
+</head>
+<body>
+    <audio id="audio" src="/ImageAndAudio/ssstik.io_1695249110173.mp3" preload="auto">    
+    </audio>
+
+    <h1>Tô indo...</h1>
+
+    <button id="meu-butao">INDO AONDE</button>
+
+    <div id="imageContainer" class="hidden">
+        <img src="/ImageAndAudio/indo-ali 2 .png" alt="Image">
+    </div>
+</body>
+
+   <script>
+    var button = document.getElementById('meu-butao');
+    var imageContainer = document.getElementById("imageContainer")
+
+    button.addEventListener("click", () => {
+        audio.play();
+        button.style.zIndex = 0;
+        setTimeout(() => {
+            imageContainer.style.opacity = 1
+        }, 100)
+    });
+</script>
+</html>
